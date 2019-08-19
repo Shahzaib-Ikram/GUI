@@ -1,11 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ScenariosComponent } from './scenarios/scenarios.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent
+    redirectTo: 'dashboard',
+    pathMatch: 'full'
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  },
+  {
+    path: 'scenarios',
+    component: ScenariosComponent
   },
   {
     path: 'auth',
