@@ -1,0 +1,16 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "This server is used to make the communication between node-red isntance on server with client.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Shahzaib-Ikram",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-red": "^0.20.7"
+  }
+}

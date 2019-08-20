@@ -13,11 +13,12 @@ import en from '@angular/common/locales/en';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ScenariosComponent } from './scenarios/scenarios.component';
+import { CreatescenarioComponent } from './createscenario/createscenario.component';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, ScenariosComponent],
+  declarations: [AppComponent, DashboardComponent, ScenariosComponent, CreatescenarioComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

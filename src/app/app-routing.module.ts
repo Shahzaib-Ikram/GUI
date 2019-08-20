@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ScenariosComponent } from './scenarios/scenarios.component';
+import { CreatescenarioComponent } from './createscenario/createscenario.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'scenarios',
     component: ScenariosComponent
+  },
+  {
+    path: 'createscenario',
+    component: CreatescenarioComponent
   },
   {
     path: 'auth',
