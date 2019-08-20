@@ -12,5 +12,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "node-red": "^0.20.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
