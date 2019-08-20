@@ -11,8 +11,8 @@
 /node_modules
 
 #server node modules
-./server/node_modules
-./server/package-lock.json
+/server/node_modules/
+/server/package-lock.json
 
 package-lock.json
 
