@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ScenariosComponent } from './scenarios/scenarios.component';
 import { CreatescenarioComponent } from './createscenario/createscenario.component';
+import { DeviceconfigComponent } from './deviceconfig/deviceconfig.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,19 @@ const routes: Routes = [
     path: 'createscenario',
     component: CreatescenarioComponent
   },
+  {
+    path: 'deviceconfig',
+    component: DeviceconfigComponent
+  },  
+  {
+    path: 'deviceconfig/:id',
+    component: DeviceconfigComponent
+  },
+  //{
+  //  path: "deviceconfig/:id",
+  //  redirectTo: "/deviceconfig",
+  //  pathMatch: "full"
+  //},
   {
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)

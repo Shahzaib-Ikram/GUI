@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { NoderedService } from '../services/nodered.service';
 
 @Component({
   selector: 'app-createscenario',
@@ -7,10 +8,15 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrls: ['./createscenario.component.css']
 })
 export class CreatescenarioComponent implements OnInit {
-  isrc: SafeResourceUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-    'http://localhost:8000/red/'
-  );
-  constructor(private sanitizer: DomSanitizer) {}
+  isrc: SafeResourceUrl;
+  constructor(
+    private sanitizer: DomSanitizer,
+    private _nodeRed: NoderedService
+  ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.isrc = this.sanitizer.bypassSecurityTrustResourceUrl(
+      `${this._nodeRed.baseUrl}/red/`
+    );
+  }
 }

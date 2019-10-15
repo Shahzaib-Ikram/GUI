@@ -14,11 +14,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ScenariosComponent } from './scenarios/scenarios.component';
 import { CreatescenarioComponent } from './createscenario/createscenario.component';
+import { DeviceconfigComponent } from './deviceconfig/deviceconfig.component';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, ScenariosComponent, CreatescenarioComponent],
+  declarations: [AppComponent, DashboardComponent, ScenariosComponent, CreatescenarioComponent, DeviceconfigComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
